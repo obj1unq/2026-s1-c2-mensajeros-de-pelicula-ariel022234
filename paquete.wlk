@@ -1,4 +1,4 @@
-/*Implementacion del objeto paquete */
+
 object paquete {
 	var pago = true
 

@@ -1,15 +1,21 @@
-import vehiculos
+import vehiculos.*
+import destinos.*
+import paquete.*
 
 
 object jeanGray {
   const peso = 65
 
-  method llamar() {
+  method llamada() {
     return true
   }
 
   method peso() {
     return peso
+  }
+
+   method puedeLlevarPaqueteA(destino) {
+      return paquete.estaPago() &&  destino.puedePasar (self)
   }
 
 
@@ -38,13 +44,23 @@ object neo {
     }
 
 
+   method puedeLlevarPaqueteA(destino) {
+      return paquete.estaPago() &&  destino.puedePasar (self)
+  }
+
+
 }
 
 object saraConnor {
     var vehiculo = null
+    var peso = null
   
-  method peso(peso) {
+  method peso() {
     return peso + vehiculo.peso()
+  }
+
+  method pesoActual(pesoNuevo) {
+    peso = pesoNuevo
   }
 
 
@@ -55,6 +71,16 @@ object saraConnor {
   method vehiculo() {
     return vehiculo
   }
+
+  method llamada() {
+    return false
+  }
+
+  method puedeLlevarPaqueteA(destino) {
+      return paquete.estaPago() &&  destino.puedePasar (self)
+  }
+
+
 
   
 
