@@ -1,3 +1,6 @@
+import mensajeros
+
+
 object puenteBrooklyn {
   method puedePasar(mensajero) {
     if (mensajero.peso() <= 1000) {

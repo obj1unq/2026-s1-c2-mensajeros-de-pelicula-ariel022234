@@ -1,3 +1,6 @@
+import vehiculos
+
+
 object jeanGray {
   const peso = 65
 
@@ -14,7 +17,7 @@ object jeanGray {
 
 object neo {
     var credito = true
-    var peso = 0
+    const peso = 0
  
   method conCredito() {
     credito = true
@@ -30,20 +33,20 @@ object neo {
     return credito
   }
 
+    method peso() {
+      return peso
+    }
+
 
 }
 
 object saraConnor {
-    var peso = null
     var vehiculo = null
   
-  method peso() {
-    return peso + vehiculo().peso()
+  method peso(peso) {
+    return peso + vehiculo.peso()
   }
 
-  method cambioPeso(pesoNuevo) {
-    peso = pesoNuevo
-  }
 
   method cambiarVehiculo(cambioVehiculo) {
     vehiculo = cambioVehiculo
