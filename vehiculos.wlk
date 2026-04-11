@@ -5,19 +5,19 @@ object moto {
 }
 
 object camion {
-    const acoplado = 500
-    var acoplados = 0
+    const acopladoKgs = 500
+    var acopladosKgs = 0
 
     method acoplados(cantidad) {
-      acoplados = acoplado * cantidad
+      acopladosKgs = acopladoKgs * cantidad
     }
 
 
   method peso()  {
-    return 500 + self.cantAcoplados()
+    return 500 + self.acopladosKgs()
   }
 
-  method cantAcoplados() {
-    return acoplados
+  method acopladosKgs() {
+    return acopladosKgs
   }
 }

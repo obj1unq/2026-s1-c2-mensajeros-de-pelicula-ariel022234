@@ -1,19 +1,15 @@
 import mensajeros.*
 
-
 object puenteBrooklyn {
       method puedePasar(mensajero) {
-        return mensajero.peso() <= 1000
+            return mensajero.peso() <= 1000
       }
 }
 
 object laMatrix {
   
-
-  method puedePasar(mensajero) {
-    return mensajero.llamada()
+    method puedePasar(mensajero) {
+        return mensajero.llamada()
   }
-
-  
 
 }
