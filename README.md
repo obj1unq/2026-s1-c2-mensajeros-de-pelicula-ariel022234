@@ -1,7 +1,5 @@
 ## Alumno: Matias Ferrufino
 
-## Resolución de: Mensajeros de Pelicula
-
 
 
 # Mensajeros de Película
