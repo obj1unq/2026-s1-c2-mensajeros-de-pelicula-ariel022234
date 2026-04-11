@@ -1,7 +1,7 @@
 import paquete.*
 import mensajeros.*
 import destinos.*
-import vehiculos*
+import vehiculos.*
 
 object empresa {
 
