@@ -1,0 +1,28 @@
+import destinos.*
+import empresa.*
+import mensajeros.*
+import paquete.*
+import vehiculos.*
+
+
+
+
+
+describe "Mensajeros" {
+  test "Envio de paquete" {
+    paquete.noPagado()
+    assert.notThat(empresa.puedeEntregarA(neo,laMatrix))
+
+    paquete.estaPago()
+    assert.notThat(empresa.puedeEntregarA(jeanGray,laMatrix))
+
+
+    saraConnor.pesoActual(70)
+    saraConnor.cambiarVehiculo(camion)
+    camion.acoplados(1)
+    assert.notThat(empresa.puedeEntregarA(saraConnor,puenteBrooklyn))
+
+    saraConnor.cambiarVehiculo(moto)
+    assert.notThat(empresa.puedeEntregarA(saraConnor,puenteBrooklyn))
+}
+}
